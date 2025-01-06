@@ -338,7 +338,11 @@ header nav .nav_right .menu_icon {
   color: rgba(0, 0, 0, 0.87);
   padding-left: 2rem;
 }
-.category .Category_pdt {
+.category .scrollable {
+  position: relative;
+  /* Scroll buttons */
+}
+.category .scrollable .Category_pdt {
   margin-top: 0.3rem;
   display: flex;
   align-items: center;
@@ -346,24 +350,24 @@ header nav .nav_right .menu_icon {
   justify-content: flex-start;
   gap: 1rem;
 }
-.category .Category_pdt .cat_pdt {
+.category .scrollable .Category_pdt .cat_pdt {
   width: 15rem;
   height: 15rem;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   padding: 1rem;
   border-radius: 10px;
 }
-.category .Category_pdt .cat_pdt .pdt_img {
+.category .scrollable .Category_pdt .cat_pdt .pdt_img {
   width: 100%;
   height: 90%;
 }
-.category .Category_pdt .cat_pdt .pdt_img img {
+.category .scrollable .Category_pdt .cat_pdt .pdt_img img {
   width: 10rem;
 }
-.category .Category_pdt .cat_pdt p {
+.category .scrollable .Category_pdt .cat_pdt p {
   text-align: center;
 }
-.category .scroll-container {
+.category .scrollable .scroll-container {
   display: flex; /* Arrange items in a row */
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent wrapping */
@@ -373,8 +377,35 @@ header nav .nav_right .menu_icon {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
-.category .scroll-container::-webkit-scrollbar {
+.category .scrollable .scroll-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
+}
+.category .scrollable .scroll-button {
+  background: none;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.category .scrollable .scroll-button i {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.category .scrollable .scroll-button.left {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.category .scrollable .scroll-button.right {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.category .scrollable .scroll-button:hover {
+  background: wheat;
 }
 
 .quick_sales .quik {

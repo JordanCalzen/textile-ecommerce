@@ -10,41 +10,76 @@
 			padding-left: 2rem;
 		}
 	}
-	.Category_pdt {
-		margin-top: 0.3rem;
-		@include incenter;
-		justify-content: flex-start;
-		gap: 1rem;
-		.cat_pdt {
-			width: 15rem;
-			height: 15rem;
-			box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-				rgba(17, 17, 26, 0.1) 0px 0px 8px;
-			padding: 1rem;
-			border-radius: 10px;
-			.pdt_img {
-				width: 100%;
-				height: 90%;
-				img {
-					width: 10rem;
+	.scrollable {
+		position: relative;
+		.Category_pdt {
+			margin-top: 0.3rem;
+			@include incenter;
+			justify-content: flex-start;
+			gap: 1rem;
+
+			.cat_pdt {
+				width: 15rem;
+				height: 15rem;
+				box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+					rgba(17, 17, 26, 0.1) 0px 0px 8px;
+				padding: 1rem;
+				border-radius: 10px;
+				.pdt_img {
+					width: 100%;
+					height: 90%;
+					img {
+						width: 10rem;
+					}
+				}
+				p {
+					text-align: center;
 				}
 			}
-			p {
-				text-align: center;
+		}
+		.scroll-container {
+			display: flex; /* Arrange items in a row */
+			overflow-x: auto; /* Enable horizontal scrolling */
+			white-space: nowrap; /* Prevent wrapping */
+			scroll-behavior: smooth; /* Enable smooth scrolling */
+			padding: 10px; /* Optional: Add padding for aesthetics */
+			gap: 10px; /* Optional: Add space between items */
+			scrollbar-width: none; /* Firefox */
+			-ms-overflow-style: none; /* IE and Edge */
+		}
+		.scroll-container::-webkit-scrollbar {
+			display: none; /* Chrome, Safari, and Opera */
+		}
+		/* Scroll buttons */
+		.scroll-button {
+			background: none;
+			color: black;
+			border: none;
+			outline: none;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			z-index: 1;
+			i {
+				font-size: 3rem;
+				font-weight: 400;
 			}
 		}
-	}
-	.scroll-container {
-		display: flex; /* Arrange items in a row */
-		overflow-x: auto; /* Enable horizontal scrolling */
-		white-space: nowrap; /* Prevent wrapping */
-		scroll-behavior: smooth; /* Enable smooth scrolling */
-		padding: 10px; /* Optional: Add padding for aesthetics */
-		gap: 10px; /* Optional: Add space between items */
-		scrollbar-width: none; /* Firefox */
-		-ms-overflow-style: none; /* IE and Edge */
-	}
-	.scroll-container::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, and Opera */
+
+		.scroll-button.left {
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+
+		.scroll-button.right {
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+
+		.scroll-button:hover {
+			background: wheat;
+		}
 	}
 }
