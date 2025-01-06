@@ -1,0 +1,98 @@
+body {
+	font-family: "Segoe UI", Tahoma;
+	background-color: rgba(0, 0, 0, 0.418);
+}
+
+a {
+	text-decoration: none;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+section {
+	margin: 2rem 0;
+	background-color: white;
+}
+
+.category_content {
+	@include incenter;
+	justify-content: space-between;
+	overflow-y: hidden;
+	.quick_left {
+		padding-left: 1rem;
+		span {
+			font-size: 1.5rem;
+			font-weight: 500;
+		}
+	}
+	h1 {
+		color: rgba(0, 0, 0, 0.87);
+	}
+}
+
+.items_container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1rem;
+	padding: 1rem 0;
+	.item_pdt {
+		height: 23rem;
+		padding: 1rem;
+		border-radius: 5px;
+		.item_pdt_img {
+			width: 100%;
+			height: 14rem;
+			background-color: #e5e5e5;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				margin: auto;
+				object-fit: cover;
+			}
+		}
+		.item_price {
+			@include incenter;
+			justify-content: space-between;
+			span {
+				text-decoration: line-through;
+				font-weight: 200;
+			}
+		}
+	}
+	.item_pdt:hover {
+		box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+			rgba(17, 17, 26, 0.1) 0px 0px 8px;
+		scale: 1.01;
+	}
+}
+
+.search {
+	width: 55%;
+	background-color: white;
+	padding: 1rem 0.5rem;
+	@include incenter;
+	justify-content: start;
+	gap: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid blue;
+	@media (max-width: 880px) {
+		display: none;
+	}
+	i {
+		color: #00509ae1;
+	}
+	input {
+		width: 90%;
+		outline: 0;
+		border: 0;
+		background: none;
+		font-size: 1rem;
+	}
+	input::placeholder {
+		color: #00509ae1;
+		font-weight: 100;
+	}
+}
