@@ -527,13 +527,17 @@ footer {
 }
 footer .back_to_top {
   background-color: #3b3b3b;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
   text-align: center;
 }
 footer .back_to_top .backp {
   padding: 1rem 0;
+  background: 0;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 footer .back_to_top .backp span {
   display: block;

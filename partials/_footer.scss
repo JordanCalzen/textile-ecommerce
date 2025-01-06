@@ -3,12 +3,17 @@ footer {
 	.back_to_top {
 		background-color: #3b3b3b;
 		// height: 10vh;
-		color: white;
-		font-size: 1rem;
-		font-weight: 400;
+
 		text-align: center;
 		.backp {
 			padding: 1rem 0;
+			background: 0;
+			border: 0;
+			outline: 0;
+			color: white;
+			font-size: 1rem;
+			font-weight: 400;
+			cursor: pointer;
 			span {
 				display: block;
 				margin: auto;
