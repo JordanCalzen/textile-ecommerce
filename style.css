@@ -144,17 +144,6 @@ header nav .nav_left {
     justify-content: space-between;
   }
 }
-header nav .nav_left .menu_icon {
-  display: block;
-  color: white;
-  font-size: 1.1rem;
-  display: none;
-}
-@media (max-width: 760px) {
-  header nav .nav_left .menu_icon {
-    display: block;
-  }
-}
 header nav .nav_left .logo {
   display: flex;
   align-items: center;
@@ -253,6 +242,17 @@ header nav .nav_right .cart_link .total_cart {
 }
 header nav .nav_right .cart_link .total_cart i {
   margin: auto;
+}
+header nav .nav_right .menu_icon {
+  display: block;
+  color: white;
+  font-size: 1.1rem;
+  display: none;
+}
+@media (max-width: 760px) {
+  header nav .nav_right .menu_icon {
+    display: block;
+  }
 }
 
 .call_them {
