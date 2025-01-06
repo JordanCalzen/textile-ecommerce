@@ -19,7 +19,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 		gap: 1rem;
-		padding: 1rem 0;
+		padding: 1rem 0.5rem;
 		.item_pdt {
 			height: 23rem;
 			padding: 1rem;
