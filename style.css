@@ -514,11 +514,13 @@ header nav .nav_right .menu_icon {
   opacity: 0;
   cursor: pointer;
 }
-.featured_pdts .featuredpdt_container .item_pdt:hover {
+.featured_pdts .featuredpdt_container .item_pdt:hover,
+.featured_pdts .featuredpdt_container .item_pdt:focus {
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   scale: 1.01;
 }
-.featured_pdts .featuredpdt_container .item_pdt:hover .add_to_cart {
+.featured_pdts .featuredpdt_container .item_pdt:hover .add_to_cart,
+.featured_pdts .featuredpdt_container .item_pdt:focus .add_to_cart {
   opacity: 1;
 }
 
