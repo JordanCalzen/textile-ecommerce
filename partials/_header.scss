@@ -47,18 +47,18 @@ header {
 		}
 		.search {
 			width: 55%;
+			border: none;
 			background-color: white;
 			padding: 1rem 0.5rem;
 			@include incenter;
 			justify-content: start;
 			gap: 0.5rem;
 			border-radius: 10px;
-			border: 2px solid blue;
 			@media (max-width: 880px) {
 				display: none;
 			}
 			i {
-				color: #00509ae1;
+				color: rgba(0, 0, 0, 0.644);
 			}
 			input {
 				width: 90%;
@@ -66,9 +66,10 @@ header {
 				border: 0;
 				background: none;
 				font-size: 1rem;
+				color: black;
 			}
 			input::placeholder {
-				color: #00509ae1;
+				color: rgba(0, 0, 0, 0.644);
 				font-weight: 100;
 			}
 		}

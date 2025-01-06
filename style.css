@@ -75,10 +75,6 @@ section {
   text-decoration: line-through;
   font-weight: 200;
 }
-.items_container .item_pdt:hover {
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  scale: 1.01;
-}
 
 .search {
   width: 55%;
@@ -176,6 +172,7 @@ header nav .nav_left .logo .atsc {
 }
 header nav .search {
   width: 55%;
+  border: none;
   background-color: white;
   padding: 1rem 0.5rem;
   display: flex;
@@ -184,7 +181,6 @@ header nav .search {
   justify-content: start;
   gap: 0.5rem;
   border-radius: 10px;
-  border: 2px solid blue;
 }
 @media (max-width: 880px) {
   header nav .search {
@@ -192,7 +188,7 @@ header nav .search {
   }
 }
 header nav .search i {
-  color: rgba(0, 80, 154, 0.8823529412);
+  color: rgba(0, 0, 0, 0.644);
 }
 header nav .search input {
   width: 90%;
@@ -200,13 +196,14 @@ header nav .search input {
   border: 0;
   background: none;
   font-size: 1rem;
+  color: black;
 }
 header nav .search input::-moz-placeholder {
-  color: rgba(0, 80, 154, 0.8823529412);
+  color: rgba(0, 0, 0, 0.644);
   font-weight: 100;
 }
 header nav .search input::placeholder {
-  color: rgba(0, 80, 154, 0.8823529412);
+  color: rgba(0, 0, 0, 0.644);
   font-weight: 100;
 }
 header nav .nav_right {
@@ -408,6 +405,8 @@ header nav .nav_right .cart_link .total_cart i {
   height: 23rem;
   padding: 1rem;
   border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  scale: 1.01;
 }
 .quick_sales .items_container .item_pdt .item_pdt_img {
   width: 100%;
@@ -429,7 +428,6 @@ header nav .nav_right .cart_link .total_cart i {
   justify-content: space-between;
 }
 .quick_sales .items_container .item_pdt:hover {
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   scale: 1.01;
 }
 
