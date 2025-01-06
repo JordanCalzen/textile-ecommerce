@@ -601,11 +601,6 @@ footer .footerB p {
   color: white;
   transition: all 0.3s;
 }
-@media (max-width: 1025px) {
-  .sidebar {
-    display: block;
-  }
-}
 .sidebar .upper {
   display: flex;
   align-items: center;
