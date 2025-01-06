@@ -549,18 +549,13 @@ footer .footerB .socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 1rem;
 }
-footer .footerB .socials button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 0;
-  background: 0;
-}
-footer .footerB .socials button img {
-  width: 100%;
+footer .footerB .socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 footer .footerB .redirects {
   display: flex;
@@ -629,15 +624,10 @@ footer .footerB p {
   z-index: 10;
   padding: 1rem;
 }
-.sidebar .socials button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 0;
-  background: 0;
-}
-.sidebar .socials button img {
-  width: 100%;
+.sidebar .socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 
 .visible {
