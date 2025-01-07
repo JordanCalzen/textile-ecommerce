@@ -26,3 +26,24 @@ function scrollRight() {
 		behavior: "smooth", // Smooth scroll
 	});
 }
+
+const menuBtn = document.querySelector(".menu_icon");
+const sideBar = document.querySelector(".sidebar");
+const xBtn = document.querySelector(".remove");
+
+menuBtn.addEventListener("click", () => {
+	menuBtn.style.display = "none";
+	sideBar.classList.toggle("visible");
+});
+
+xBtn.addEventListener("click", () => {
+	menuBtn.style.display = "block";
+	sideBar.classList.remove("visible");
+});
+
+const overlay = document.getElementById("overlay");
+
+overlay.addEventListener("click", () => {
+	sideBar.classList.remove("visible");
+	overlay.style.display = "none";
+});
