@@ -630,7 +630,7 @@ footer .footerB p {
   width: 300px;
   background-color: rgba(161, 181, 247, 0.9176470588);
   background: white;
-  min-height: 100vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
