@@ -34,11 +34,13 @@ const xBtn = document.querySelector(".remove");
 menuBtn.addEventListener("click", () => {
 	menuBtn.style.display = "none";
 	sideBar.classList.toggle("visible");
+	document.body.classList.toggle("no-scroll");
 });
 
 xBtn.addEventListener("click", () => {
 	menuBtn.style.display = "block";
 	sideBar.classList.remove("visible");
+	document.body.classList.remove("no-scroll");
 });
 
 const overlay = document.getElementById("overlay");
@@ -47,4 +49,5 @@ overlay.addEventListener("click", () => {
 	sideBar.classList.remove("visible");
 	overlay.style.display = "none";
 	menuBtn.style.display = "block";
+	document.body.classList.remove("no-scroll");
 });
