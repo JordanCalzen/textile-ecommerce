@@ -43,11 +43,13 @@ xBtn.addEventListener("click", () => {
 	document.body.classList.remove("no-scroll");
 });
 
-const overlay = document.getElementById("overlay");
-
 overlay.addEventListener("click", () => {
+	if (sideBar.classList.contains("visible")) {
+		overlay.style.display = "block";
+	} else {
+		overlay.style.display = "none";
+	}
 	sideBar.classList.remove("visible");
-	overlay.style.display = "none";
 	menuBtn.style.display = "block";
 	document.body.classList.remove("no-scroll");
 });
