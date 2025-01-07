@@ -1,22 +1,10 @@
 .sidebar {
 	width: 300px;
-	background-color: #a1b5f7ea;
 	background: white;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 5;
-	display: none;
+	height: 100%;
 	color: white;
-	transform: translateX(100%);
-	transition: all 0.3s;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-	@media (max-width: 1025px) {
-		display: block;
-	}
-
 	.upper {
 		display: flex;
 		align-items: center;
@@ -94,8 +82,8 @@
 			font-weight: 500;
 			padding: 0.5rem 1rem;
 			background-color: white;
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-				rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+			box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+				rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 			border-radius: 5px;
 			width: 85%;
 			margin-bottom: 0.5rem;

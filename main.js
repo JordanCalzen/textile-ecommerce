@@ -28,7 +28,7 @@ function scrollRight() {
 }
 
 const menuBtn = document.querySelector(".menu_icon");
-const sideBar = document.querySelector(".sidebar");
+const sideBar = document.querySelector(".sidebar_and_overlay");
 const xBtn = document.querySelector(".remove");
 
 menuBtn.addEventListener("click", () => {
@@ -41,9 +41,9 @@ xBtn.addEventListener("click", () => {
 	sideBar.classList.remove("visible");
 });
 
-const overlay = document.getElementById("overlay");
+// const overlay = document.getElementById("overlay");
 
-overlay.addEventListener("click", () => {
-	sideBar.classList.remove("visible");
-	overlay.style.display = "none";
-});
+// overlay.addEventListener("click", () => {
+// 	sideBar.classList.remove("visible");
+// 	overlay.style.display = "none";
+// });
