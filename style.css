@@ -120,7 +120,7 @@ section {
   right: 0;
   display: flex;
   transform: translateX(100%);
-  transition: all;
+  transition: all 0.05s;
   z-index: 9999;
 }
 
@@ -649,6 +649,7 @@ footer .footerB p {
 }
 
 .sidebar {
+  padding-top: 0.8rem;
   width: 300px;
   background: white;
   height: 100%;

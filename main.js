@@ -41,9 +41,10 @@ xBtn.addEventListener("click", () => {
 	sideBar.classList.remove("visible");
 });
 
-// const overlay = document.getElementById("overlay");
+const overlay = document.getElementById("overlay");
 
-// overlay.addEventListener("click", () => {
-// 	sideBar.classList.remove("visible");
-// 	overlay.style.display = "none";
-// });
+overlay.addEventListener("click", () => {
+	sideBar.classList.remove("visible");
+	overlay.style.display = "none";
+	menuBtn.style.display = "block";
+});
